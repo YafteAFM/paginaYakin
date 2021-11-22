@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Titulo -->
+        <title>Yafte Aaron | Mi pagina personal</title>
+        <!-- Poner icono en la pestaña del explorador -->
+        <link rel="icon" href="img/logo/icono.png">
+
+        <!-- paquetes -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Se enlaza una hoja de estilo -->
+        <link rel="stylesheet" href="../css/estiloPortada.css" >
+        <link rel="stylesheet" href="../css/estilosBarra.css" >
+        <link rel="stylesheet" href="../css/estilosFootter.css" >
+        <link rel="stylesheet" href="../css/estiloSlider.css" >
+        <link rel="stylesheet" href="css/estilosContenido.css" >
+    
+    </head>
+
+    <!-- Cuerpo -->
+    <body>        
+        <!-- Barra de navegacion con menu -->
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo/icono.png" width="30" height="30" class="d-inline-block align-top" alt="">&nbsp;&nbsp;Yakin Aaron
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>  
+                    
+                    <li class="nav-item">
+                        <a class="nav-link itemLink" href="#"> Programas</a>
+                        <ul class="dropdownSubMenu">
+                            <li class="dropdownItem">
+                                <a class="nav-link" href="../index.html">Tuberia</a>
+                            </li>
+                            <li class="dropdownItem">
+                                <a class="nav-link" href="charola.html">Charolas</a>
+                            </li>    
+                        </ul>
+                    </li>
+                </ul>              
+            </div>
+        </nav>
+
+        <!-- Contenido principal -->    
+        <div class="contenedorPrincipal">
+            <h2>Cálculo de charolas</h2>
+            <main class="contenido">
+                <div class="contenedorCalculadora" id="contenedorCalculadora" >  
+                    <div class="panel">
+                        <div class="panelBoton">
+                            <a id="botonAdd" class = "botonAgregar">
+                                <img src="img/logos/add.png" width="35" height="35"> Agregar
+                            </a>
+                        </div>
+                        
+                        <div class="panelListaTubo">
+                            <label class= "labelTubo" id="labelTubo" for="cars">Tipo de tubo</label>
+                            <div id = contenedorListaTubo></div>
+                        </div>
+                        
+    
+                        <a class="botonCalcular" id="botonCalcular">
+                            <img src="img/logos/calcular.png" width="35" height="35"> Calcular
+                        </a>
+
+                    </div> 
+                
+                    <div class = "contenedorCables" id="contenedorCables" ></div>
+
+                    <div class = "contenedorCharolas" id="contenedorCharolas" >
+                            HOLA
+
+                    </div>
+                </div>
+
+                <div class="contenedorResultado" id="contenedorResultado">
+                    <div class= "contenedorResultadosDiv" id = "contenedorResultadosDiv" >
+                        <table class="tablaResultados" id="tablaResultados">  
+                            <head><tr class="encabezadoResultados"><th colspan="2">Resultado</th></tr></head>
+                            <tr id="fila1"><td class="colum1"> Area de cables  </td><td></td></tr>
+                            <tr id="fila1"><td class="colum1"> Tamaño charola </td><td></td></tr>
+                        </table>
+                    </div>                    
+                </div>
+
+            </main>
+        </div>
+ 
+    
+    
+        <!-- JQuerys -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Bootstrap -->      
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script> 
+
+        <script src="js/modeloCharolas.js" ></script>
+    </body>
+</html>

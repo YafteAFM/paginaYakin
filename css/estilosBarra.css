@@ -1,0 +1,124 @@
+/*Barra Principal*/
+.nav-item{
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid  transparent;
+    padding: 0px 5px 0px 5px;
+}
+.nav-item:hover{
+    border: 1px solid  rgba(255,255,255,0.4);
+}
+
+/*Barra Principal SubMenus desplegables*/
+.nav-item .dropdownSubMenu{
+    background-color: #343a40;
+    position: absolute;
+    top: 48px;
+    border-radius: 0px 5px 5px 5px;
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.nav-item:hover .dropdownSubMenu{
+  visibility: visible;
+}
+
+.dropdownSubMenu:active{
+    visibility: hidden;
+}
+
+.dropdownItem{
+    list-style-type:none;
+    border: 1px solid  transparent;
+    border-radius: 3px;
+    padding: 0px 0px 0px 0px; /* Arriba Derecha Abajo Izquierda*/
+    font-size: 13px;
+}
+
+.dropdownItem:hover{
+    border: 1px solid  rgba(255,255,255,0.4);
+}
+
+.navbar-collapse{
+    display:block;
+    justify-content: space-between;
+}
+
+
+/*Modificar la barra cuando colapsa y aparece el menu
+}*/
+@media screen and (max-width: 1199px){
+    /*Quitar submenus*/
+    .nav-item:hover .dropdownSubMenu{
+        top: 0px;
+        display: block;
+        position: relative;        
+        border-radius: 0px 5px 5px 5px;
+        text-align: center;
+        padding: 0px 0px 0px 0px;
+        height: 100%;
+        width: 100%;                    
+    }
+
+    .nav-item:hover {        
+        border-top: 4px solid rgb(151, 36, 36);
+        border-bottom: 4px solid rgb(151, 36, 36);
+        border-left:  1px solid rgb(163, 160, 160);
+        border-right: 1px solid rgb(163, 160, 160);
+        border-radius: 5px 5px 5px 5px;
+        width: 130px;
+        padding: 0px;
+    }
+
+    .nav-item:hover .itemLink{        
+        background-color: rgb(121, 121, 121);
+        font-weight: bold;
+    }
+
+    .nav-item .dropdownSubMenu{
+        position: relative;
+        display: none;
+        z-index: 1;
+        
+    }
+
+    /*Centra los iconos*/
+    .text-center{
+        align-items: center;
+    }
+
+    .dropdownItem:hover{
+        border: 1px solid transparent;
+        background-color: rgb(46, 46, 46);
+        width: 100%;
+    }
+
+    .redesSociales:hover{
+        width: 200px;
+        padding: 0px;
+    }
+}
+
+
+/*Barra Redes Sociales*/
+.redesSociales{
+    display:flex;
+}
+.redesSociales:hover{
+    border: 1px solid transparent;
+}
+
+.redesSociales > a{
+    padding: 5px 0px 0px 0px; /* Arriba Derecha Abajo Izquierda*/
+    width: 40px;
+    height: 30px;
+}
+.redesSociales > a:hover{
+    padding: 5px 0px 0px 0px; /* Arriba Derecha Abajo Izquierda*/
+}
+
+.redesSociales:hover > a:hover img{
+    width: 26px;
+    height: 26px;
+}

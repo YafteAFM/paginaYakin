@@ -1,0 +1,218 @@
+.contenedorPrincipal{
+    align-items: center;
+    text-align: center;
+    background-color: rgb(247, 242, 242);
+    padding: 10px;
+    width: 100%;
+    height: 700px;
+    margin: 0px auto;
+}
+
+.contenido{
+    margin: 30px;
+    padding: 20px;
+    background: #25252593;
+    height: auto;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto 390px;
+    grid-template-areas: "calculadora resultado";
+}
+
+.contenedorCalculadora{
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    background-color: rgb(179, 179, 179);
+    grid-area: calculadora;
+}
+
+.contenedorResultado{
+    margin-left: 20px;
+    grid-area: resultado;
+    background-color: rgb(231, 231, 231);
+}
+
+.panel{
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    /*background-color: rgb(68, 180, 180);*/
+    width: auto;
+    margin: auto;
+    height: 110px;
+    text-align:center;
+    align-items:center;
+    align-content:center;
+}
+.panelBoton{
+    text-align:center;
+    align-items:center;
+    align-content:center;
+    height: auto;
+    width: auto;
+    margin: auto;
+    /*background-color: rgb(30, 73, 73);*/
+}
+
+.panelListaTubo{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding: 10px;
+    /*background-color: rgb(46, 117, 117);*/
+}
+.iconoBoton:hover, .iconoRemove:hover{
+    transform: translateY(-3px) scale(1.1);
+}
+
+.iconoRemove{
+    width: 20px;
+    height: 20px;
+}
+
+.contenedorCables{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #427a6e;
+}
+
+.textoAislamiento, .listaAislamiento, .textoCables, .textoDesnudo, .numeroItem, .iconoRemove{
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.itemCables{
+    width: auto;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgb(216, 216, 216);
+}
+
+.numeroItem{
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+    align-content: center;
+    text-align: center;
+}
+
+.botonCalcular{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    width: 100px;
+    margin: 10px;
+    margin-left: 50px;
+    padding: 10px;
+    background-color: rgb(127, 190, 177);
+    border-radius: 5px;
+}
+
+.botonCalcular:hover{
+    background-color: rgb(118, 209, 179);
+    transform: translateY(-3px) scale(1.1);
+}
+
+.labelTubo{
+    margin: 10px;
+    margin-left: 10px;
+
+}
+
+.listaTubo{
+    width: auto;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(217, 236, 224);
+}
+
+.iconoBoton{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.listaAislamiento{
+    width: 200px;
+}
+
+.contenedorListaTubo{
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.laberDesnudo{
+   margin: 5px; 
+
+}
+
+.checkcaja{
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.textoAislamiento{
+    margin-left: 20px;
+}
+
+.numeroItem{
+    margin-left: 20px;
+}
+
+.listaCables{
+    border-radius: 5px;
+    width: 50px;
+
+}
+
+.textoCables{
+    margin-left: 20px;
+}
+
+.tablaResultados{
+    background-color: #dcdddd;
+    border-bottom: solid 5px #0F362D;
+    width: 100%;
+}
+
+.tablaResultados td,th{
+    padding: 15px;  
+    text-align: left;
+     
+}
+
+.colum1{
+    border-right: 2px solid rgb(122, 121, 121);
+    width: 180px;
+}
+
+.tablaResultados tr:nth-child(even){
+    background-color: rgb(199, 199, 199);    
+}
+
+
+
+.tablaResultados tr:hover{
+    background-color: #8a8a8a;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.encabezadoResultados{
+    background-color: #427a6e;
+    color: aliceblue;
+    border-bottom: solid 5px #15362f;
+}
